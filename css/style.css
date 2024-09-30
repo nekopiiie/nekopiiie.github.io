@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'AvantGardeGothicC';
+    src: url("../fonts/AvantGardeGothicC.woff2") format("woff2");   
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AvantGarde-Bold";
+    src: url("../fonts/AvantGarde-Bold.woff2") format("woff2"); 
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *after{
+    box-sizing: inherit;
+
+}
+
+boby{
+    font-family: "AvantGarde-Bold";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+    border: 1px black solid;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*header styles start панель верхняя господи*/
+
+.header{
+    margin-top: 25px;
+
+    position: fixed;
+    top: 0;
+    left: 7%;
+    width: 86%;
+}
+
+.header__panel{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.header__item{
+    margin-right: 49px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+
+.header__link{
+   font-size: 15px; 
+   font-family: "AvantGarde-Bold";
+   text-decoration: none;
+   color: black;
+
+}
+.header__list:hover, .header__list:focus, .header__list:active{
+    opacity: rgba(179, 208, 180, 1);
+}
+
+/*header styles end*/
+
+/*intro styles start*/
+
+.intro{
+    height: 100vh;
+    background: url(../images/fon_1.png) no-repeat center;
+    background-size: cover;
+}
+
+/*intro styles end*/
