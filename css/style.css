@@ -14,6 +14,7 @@
     font-display: swap;
 }
 
+
 html{
     box-sizing: border-box;
 }
@@ -22,19 +23,22 @@ html{
 
 }
 
-boby{
+body{
     font-family: "AvantGarde-Bold";
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
     font-weight: normal;
     color: black;
+    cursor: url(../images/meow1.png), auto;
 }
-
 
 .wrapper{
     margin: 0 auto;
-    border: 1px black solid;
+    border: 1px solid #ccccccdd; 
+    /* КАК СДЕЛАТЬ ГРАДИЕНТУЮ РАМКУ ГОСПОДИ*/
+    background: linear-gradient(45deg, rgba(229, 229, 229, 0.2), rgba(229, 229, 229, 0.2));
+    backdrop-filter: blur(11px);
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -44,12 +48,12 @@ boby{
 /*header styles start панель верхняя господи*/
 
 .header{
-    margin-top: 25px;
-
+    margin-top: 23px;
     position: fixed;
     top: 0;
     left: 7%;
     width: 86%;
+    z-index: 1000;
 }
 
 .header__panel{
@@ -68,7 +72,6 @@ boby{
 .header__list{
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .header__item{
@@ -83,8 +86,8 @@ boby{
    font-family: "AvantGarde-Bold";
    text-decoration: none;
    color: black;
-
 }
+
 .header__list:hover, .header__list:focus, .header__list:active{
     opacity: rgba(179, 208, 180, 1);
 }
@@ -93,10 +96,755 @@ boby{
 
 /*intro styles start*/
 
+.intro__wrap{
+    padding-left: 120px; 
+    margin: 0 auto;
+    /* display: flex; */
+}
+
 .intro{
     height: 100vh;
     background: url(../images/fon_1.png) no-repeat center;
     background-size: cover;
+    padding-top: 183px;
+}
+
+.intro__title{
+    max-width: 430.03px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: black; 
+    margin-bottom: 13px;
+    padding-left: 10px;
+}
+
+.image-text-container1{
+    position: relative;
+    display: inline-block;
+    margin-left: -15px;
+}
+
+.h2{
+    max-width: 410px;
+    font-size: 65.03px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: -20px;
+    padding-bottom: 10px;
+}
+
+/* .h2 span{
+    display: inline;    
+    background-color: rgba(179, 208, 180, 1);
+    padding: 2px 2px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; 
+    border-radius: 59.12px; 
+    
+} */
+
+.intro_end_not_yet{
+    max-width: 430.03px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: black; 
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.image-text-container{
+    position: relative;
+    display: inline-block;
+    margin-left: -15px;
+}
+
+.intro__end{
+    font-family: 'AvantGardeGothicC';
+    width: 86.1%;
+    font-size: 13px;
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+}
+
+
+.background__intro{
+    position: relative;
+}
+
+.background__intro img{
+    transform: translateX(110%)translateY(-510px);
+    width: 665.46px;
+    height: 570.48px;
+}
+
+.tarelka img{
+    /* width: 632.13;
+    height: 545.55px; */
+
+    width: 52%;
+    height: 30%;
+    transform: translateX(65%)translateY(-1160px);
+    /* position: absolute; */
+}
+
+.korean_intro_nadpis{
+    position: absolute;
+    z-index: 10;
+    width: 12%;
+    top: 80%;
+    left: 19%;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.close{
+    font-family: 'AvantGardeGothicC';
+    font-size: 48px;
+    color: black;
+    float: right;
+    cursor: pointer;
+    line-height: 70%;
+}
+
+.modal_content{
+    width: 70%;
+    padding: 24px;
+    margin: 15% auto;
 }
 
 /*intro styles end*/
+/*BEST DISH SELECTION START*/
+
+.bestdish{
+    height: 1250px;
+    background: url(../images/fon_2.png) no-repeat center;
+    background-size: cover;
+    transform: translateY(-12%);
+}
+
+.best_dish_wrap{
+    padding-top: 10%;
+}
+
+.bd_text_1{
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 130px;
+}
+
+.bestdish_main{
+    position: relative;
+    display: inline-block;
+    margin-left: 104px;
+}
+
+.korean_2 img{
+    height: 10%;    
+    width: 10%;
+    float: right;
+    padding-right: 130px;
+}
+
+.star_3{
+    position: absolute;
+    width: 1.5%;
+    right: 19%;
+    top: 16%;
+}
+
+.h4{
+    max-width: 400px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: -20px;
+    padding-bottom: 10px;
+}
+
+.container_dishes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+    margin-left: 7.5%;
+    margin-right: 3%;
+}
+
+/* .panel_for_dish_1{
+    backdrop-filter: blur(15px); 
+    height: 632.86px;
+    position: absolute;
+    left: 7%;
+} */
+
+.dish_1, .dish_2, .dish_3 {
+    position: static; /* Изменяем позиционирование */
+} 
+
+.panel_for_dish{
+    width: 333px;
+    height: 632.86px;
+    background: linear-gradient(45deg, rgba(206, 206, 206, 0.55),rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(25px);
+    border-radius: 50px;
+    border: 4px solid rgba(156, 180, 157, 0.5); 
+    margin-top: 15%;
+}
+
+.dish_wok{
+    position: absolute;
+    top: 32%;
+    width: 23%;
+    left: 7.5%;
+}
+
+.dish_pelmeni{
+    position: absolute;
+    top: 25%;
+    width: 36%;
+    left: 36%;
+}
+
+.dish_poke{
+    position: absolute;
+    top: 30%;
+    width: 25%;
+    left: 69%;
+}
+
+.name_of_position{
+    font-size: 25px;
+    margin-left: 3%;
+    position: absolute;
+    top: 62%;
+    display: flex;
+    align-items: flex-start;
+    width: 20%;
+}
+
+.dish_desc{
+    font-size: 13px;
+    font-family: 'AvantGardeGothicC';
+    position: absolute;
+    width: 15%;
+    margin-left: 3%;
+    top: 65.5%;
+    text-align: justify;
+}
+
+.dish_desc_1{
+    font-size: 13px;
+    font-family: 'AvantGardeGothicC';
+    position: absolute;
+    width: 15%;
+    margin-left: 3%;
+    top: 67.5%;
+    text-align: justify;
+}
+
+.best_cost{
+    font-size: 25px;
+    font-family: "AvantGarde-Bold";
+    position: absolute;
+    margin-left: 3%;
+    top: 74%;
+}
+
+.heart_container2{
+    position: absolute;
+    top: 73%;
+}
+
+.kruglaya_panel{
+    width: 26%;
+    margin-left: 100%;
+}
+
+.heart_cost{
+    width: 10%;
+    position: absolute;
+    top: 27%;
+    left: 8%;
+    margin-left: 100%;
+}
+
+.go_all_menu_text{
+    position: absolute;
+    bottom: 13%;
+    right: 7%;
+}
+/*BEST DISH SELECTION END*/
+
+/*ABOUT US SELECTION END*/
+.about_us_main{
+    height: 1250px;
+    background: url(../images/fon_3_with_smth.png) no-repeat center;
+    background-size: cover;
+    margin-top: -18%;
+    z-index: -10;
+}
+
+.about_us_wrap{
+    padding-top: 13%;
+    position: relative; 
+}
+
+.bd_text_2{
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 130px;
+}
+
+.our_team{
+    position: relative;
+    display: inline-block;
+    margin-left: 104px;
+}
+
+.our_team_text{
+    width: 100%;
+    font-size: 55px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 6%;
+    left: 5%;    
+}
+
+.im_text_container_US_1{
+    position: absolute;
+    left: 6.9%;
+    padding-top: 0.8%;
+}
+
+.about_us_1_text{
+    font-family: 'AvantGardeGothicC';
+    width: 89.1%;
+    font-size: 20px;
+    text-align: justify;
+    position: absolute;
+    bottom: 16%;
+    left: 6%;
+    line-height: 1.3;
+    letter-spacing: 1.4px;
+}
+
+.star_4{
+    position: absolute;
+    width: 2%;
+    left: 38%;
+    top: 65%;
+    z-index: 100%;
+}
+
+.im_text_container_US_2{
+    position: absolute;
+    padding-top: 30%;
+    right: 7.3%;
+}
+
+.about_us_2_text{
+    font-family: 'AvantGardeGothicC';
+    font-size: 20px;
+    width: 88%;
+    text-align: justify;
+    position: absolute;
+    bottom: 6%;
+    right: 6%;
+    line-height: 1.3;
+    letter-spacing: 1.4;
+}
+
+.pelmeni_vs{
+    position: absolute;
+    width: 45%;
+    right: 0.01%;
+    top: 5%;
+}
+
+.damplingi_vs{
+    position: absolute;
+    width: 53.5%;
+    left: 6%;
+    top: 173%;
+}
+
+.korean_3{
+    position: absolute;
+    right: 7%;
+    top: 284%;
+    /* padding-right: */
+}
+/*ABOUT US SELECTION END*/
+
+/*OUR RESTAURANTS SELECTION START*/
+.our_restaurants{
+    height: 1250px;
+    background: url(../images/fon_4_with_smth.png) no-repeat center;
+    background-size: cover;
+    margin-top: -10%;    
+    z-index: 1;
+}
+
+.our_place_wrap{
+    padding-top: 12%;
+}
+
+.bd_text_3{
+    font-size: 40px;
+    padding-left: 9%;
+}
+
+.our_place{
+    position: absolute;
+    display: inline-block;
+    left: 7.4%;
+    margin-top: 0.5%;
+}
+
+.our_place_text{
+    width: 100%;
+    font-size: 55px;
+    position: absolute;
+    bottom: 15%;
+    left: 6%; 
+}
+
+.container_places{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1%;
+    grid-row-gap: 0.1%;
+    margin-left: 7.5%;
+    margin-right: 3.6%;
+    margin-top: 5%;
+}
+
+.place_1, .place_2, .place_3 {
+    position: static; /* Изменяем позиционирование */
+} 
+
+.panel_for_place{
+    width: 89%;
+    height: 257px;
+    background: linear-gradient(90deg, rgba(179, 208, 180, 0.6),rgba(179, 208, 180, 0.08));
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 4px solid rgba(179, 208, 180, 0.5); 
+    margin-top: 8%;
+}
+
+.place_pic img{
+    position: absolute;
+    width: 10%;
+    z-index: 2; 
+}
+
+.place_1{
+    top: 12%;
+    left: 32.5%;
+}
+
+.place_2{
+    top: 12%;
+    right: 7%;
+}
+
+.place_3{
+    left: 32.5%;
+    top: 62%;
+}
+
+.place_4{
+    right: 7%;;
+    top: 62%;
+}
+
+.name_of_place{
+    z-index: 2; 
+    font-size: 40px;
+    margin-left: 2.4%;
+    position: absolute;
+    top: 11.2%;
+    display: flex;
+    align-items: flex-start;
+    width: 20%;
+}
+
+.name_of_place_one_more_time{
+    z-index: 2; 
+    font-size: 40px;
+    margin-left: 2.4%;
+    position: absolute;
+    top: 61.5%;
+    display: flex;
+    align-items: flex-start;
+    width: 25%;
+}
+
+.more_main{
+    position: absolute;
+    top: 36%;
+    grid-row: 1; /* Первая строка */
+    grid-column: 1;
+}
+
+.panel_w_strelochka{
+    width: 26%;
+    padding-left: 10%;
+}
+
+.more_main_1{
+    position: absolute;
+    top: 86%;
+    grid-row: 1; /* Первая строка */
+    grid-column: 1;
+}
+
+.more_title_title{
+    font-size: 20px;
+    font-family: 'AvantGardeGothicC';
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top: 25.5%;
+    left: 39%;
+}
+
+.panel_reservation{
+    position: absolute;
+    display: inline-block;
+    left: 7.4%;
+    margin-top: 5%;
+}
+
+.reservation_text{
+    width: 100%;
+    font-size: 40px;
+    position: absolute;
+    bottom: 29%;
+    left: 15%; 
+}
+
+.panel_order{
+    position: absolute;
+    display: inline-block;
+    left: 22.5%;
+    margin-top: 5%;
+}
+
+.order_text{
+    width: 100%;
+    font-size: 40px;
+    position: absolute;
+    bottom: 29%;
+    left: 9%; 
+}
+/*OUR RESTAURANTS SELECTION END*/
+
+/* ГОСПОДИ СМОТРИ ГДЕ ПИШЕШЬ БОГА РАДИ */
+
+/*FEEDBACK SELECTION START*/
+.feedback{
+    position: relative;
+    height: 1250px;
+    background: url(../images/fon_5.png) no-repeat center;
+    background-size: cover;
+    margin-top: -10%;
+    z-index: -1;
+}
+
+.feedback_wrap_idnk{
+    padding-top: 12%;
+}
+
+.bd_text_4{
+    font-size: 40px;
+    padding-left: 9%;
+}
+
+.feedback_panel{
+    position: absolute;
+    display: inline-block;
+    left: 7.4%;
+    top: 19%;
+}
+
+.feedback_text{
+    width: 100%;
+    font-size: 55px;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+.container_feedback{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+    margin-left: 7.5%;
+    margin-right: 3%;
+    margin-top: 11%;
+}
+
+.panel_for_feedback{
+    position: relative;
+    width: 333px;
+    height: 632.86px;
+    background: linear-gradient(45deg, rgba(206, 206, 206, 0.55),rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(39px);
+    border-radius: 50px;
+    border: 4px solid rgba(156, 180, 157, 0.5);   
+}
+
+.photo_otz{
+    padding-top: 8%;
+    padding-left: 8%;
+}
+
+.name_text{
+    position: absolute;
+    font-size: 20px;
+    padding-left: 5%;
+    padding-top: 15%;
+}
+
+.name_date_text{
+    font-size: 13px;
+    position: absolute;
+    font-family: 'AvantGardeGothicC';
+    letter-spacing: 1.2px;
+    color: rgba(104, 122, 105, 1);
+    left: 40%;
+    top: 16%;
+}
+
+.main_title{
+    position: relative;
+    padding-left: 10%;
+    margin-top: 20%;
+
+}
+.title_of_otz{
+    font-size: 20px;
+}
+
+.pisanina_feedback{
+    font-family: 'AvantGardeGothicC';
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    position: absolute; 
+    /* width: 84%; */
+    margin-right: 10%;
+    text-align: justify;
+    margin-top: 7%;
+}
+
+.link_feedback{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding-left: 10%;
+    padding-top: 110%;
+}
+
+.link_text{
+    font-size: 13px;
+    color: rgba(104, 122, 105, 1);
+    font-family: 'AvantGardeGothicC';
+    text-decoration: underline;
+}
+
+.link_svg{
+    position: absolute;
+    margin-left: 71%;
+    margin-bottom: 3%;
+}
+
+
+/*FEEDBACK SELECTION END*/
+
+/*FOOTER SELECTION START*/
+.footer{
+    position: relative;
+    height: 400px;
+    background: url(../images/fon_6.png) no-repeat center;
+    background-size: cover;
+    margin-top: -10%;
+    z-index: -2;
+}
+
+.footer_wrap{
+    padding-top: 14%;
+}
+
+.us_text{
+    font-size: 40px;
+    color: white;
+    padding-left: 9%;
+    text-shadow: 0px 2px 4px rgba(72, 83, 73, 0.15)
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(2, 20%);
+    grid-template-rows: repeat(2, 40%);
+    padding-top: 1.2%;
+    padding-left: 9%;
+    justify-content: start;
+    row-gap: 25%; 
+    column-gap: 3%; 
+    color: white;
+    font-size: 20px;
+}
+
+.mail, .inst, .phone, .vk{
+    display: flex; 
+    align-items: center;
+}
+
+.mail img, .inst img, .phone img, .vk img{
+    margin-right: 5%;
+}
+
+.footer_text_left_side{
+    text-shadow: 0px 2px 3px rgba(72, 83, 73, 0.15);
+    padding-bottom: 2%;
+}
+
+.footer_container_1{
+    display: grid;
+    grid-template-columns: 15% 20% 39% 26%;
+    grid-template-rows: repeat(2, 40%);
+    position: absolute;
+    top: 69%;
+    right: 15%;
+    row-gap: 25%; 
+    column-gap: 10%;
+    color: white;
+    font-size: 20px;
+}
+
+.footer_text_left_idk{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*FOOTER SELECTION END*/

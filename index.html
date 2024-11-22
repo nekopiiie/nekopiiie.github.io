@@ -6,8 +6,10 @@
     <title>tofutime</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
+    <!-- HEADER START-->
     <header class="header">
         <div class="wrapper">
             <div class="header__wrapper">
@@ -40,10 +42,404 @@
         </div>
     </header>  
     
-    <main class="main">
-          <section class="intro">
+    <div class="my-cursor"></div>
+    <!-- HEADER END-->
 
-          </section>
+    <main class="main">
+        <!-- INTRO START-->
+        <section class="intro">
+            <div class="intro__wrap">
+                <h1 id="myButton" class="intro__title"> погрузитесь в </h1>
+
+                <div class="image-text-container1">
+                    <img src="/images/svg/pervoe.svg" alt="!#">
+                    <div class="h2"><span id="myTitle">атмосферу КОРЕИ</span></div>
+                </div>
+                
+            <!-- <h2 class="h2">
+                    <span>атмосферу КОРЕИ</span>
+            </h2> -->
+
+                <p class="intro_end_not_yet">
+                    с каждым кусочком!
+                </p>
+
+                <div class="image-text-container">
+                    <img src="/images/серая мелкая панель.svg" alt="!#">
+                    <div class="intro__end">Изысканные рецепты прямо из Кореи - это то, что делает нас уникальными и успешными. Мы предлагаем вам погрузиться в атмосферу вкусной Кореи, благодаря нашим особым кулинарным талантам и специальным рецептам.</div>
+                </div>
+                
+                <div class="background__intro">
+                    <img src="/images/green nadpis.png" alt="!#">
+                </div>
+
+                <div class="tarelka">
+                    <img src="/images/main dish.png" alt="!#">
+                </div>
+
+                <div class="korean_first">
+                    <img src="/images/korean nadpis.png" alt="!#" class="korean_intro_nadpis">
+                </div>
+            </div>
+                <!-- <div id='myModal'class='modal'>
+                    <div class='modal_content'>
+                        <div id='myClose' class='close'>&times;</div>не звоните
+                    </div>
+                </div> -->
+        </section>
+        <!-- INTRO END-->
+
+        <!-- BEST DISH START-->
+        <section class="bestdish"> 
+            <div class="best_dish_wrap">
+                <ha class="bd_text_1">
+                    наши
+                </ha>
+
+                <div class="korean_2">
+                    <img src="/images/최고 의 최고.png"> 
+                </div>
+
+                <div class="star_for_best_dish">
+                    <img src="/images/svg/star_1_best_dish.svg" alt="!#" class="star_3">
+                </div>
+
+                <!-- ПЛАШКА + ТЕКСТ  -->
+                <div class="bestdish_main">
+                    <img src="/images/svg/best_seller.svg" alt="!#">
+                    <div class="h4">бестселлеры</div>
+                </div>
+                
+                <div class="container_dishes">
+                    <!-- первая плашка с вок -->
+                    <div class="dish_1">
+                        <div class="panel_for_dish">
+                            <!-- <img src="/images/svg/panel for bludo.svg" alt="!#" class="panel_for_dish_1"> -->
+                        </div>
+                        <div class="dish_pic">
+                            <img src="/images/vok s ovozhami 1.png" alt="вок с овощами" class="dish_wok">
+                        </div>
+                        <hw class="name_of_position">вок с овощами</hw>
+                        <p class="dish_desc">рис, маринованная морковь, яйцо, чука, кимчи, стручки фасоли, огурец, соус</p>
+                        <p1 class="best_cost">xxx ₽</p1>
+                    
+                        <div class="heart_container2">
+                            <img src="/images/круг под сердечко.png" alt="!#" class="kruglaya_panel">
+                            <img src="/images/svg/heart_cost.svg" alt="!#" class="heart_cost">
+                        </div>
+                    </div>
+
+                    <!-- вторая плашка с пельменями -->
+                    <div class="dish_2">
+                        <div class="panel_for_dish"></div>
+                        <div class="dish_pic">
+                            <img src="/images/king pelmeni.png" alt="королевские дамплинги" class="dish_pelmeni">
+                        </div>
+                        <hw class="name_of_position">королевские дамплинги</hw>
+                        <p class="dish_desc_1">невероятное тесто, слепленное со всей душой, мясо самой лучшей коровы, репчатый лук, морковь</p>
+                        <p1 class="best_cost">xxx ₽</p1>
+                        
+                        <div class="heart_container2">
+                            <img src="/images/круг под сердечко.png" alt="!#" class="kruglaya_panel">
+                            <img src="/images/svg/heart_cost.svg" alt="!#" class="heart_cost">
+                        </div>
+
+                    </div>
+
+                    <!-- третья плашка с поке -->
+                    <div class="dish_3">
+                        <div class="panel_for_dish"></div>
+                        <div class="dish_pic">
+                            <img src="/images/poke with losos.png" alt="поке" class="dish_poke">
+                        </div>
+                        <hw class="name_of_position">поке с копченным лососем</hw>
+                        <p class="dish_desc_1">копченый лосось, рис, авокадо, огурец, помидор, яйцо, фасоль, кукуруза, листья салата</p>
+                        <p1 class="best_cost">xxx ₽</p1>
+                        
+                        <div class="heart_container2">
+                            <img src="/images/круг под сердечко.png" alt="!#" class="kruglaya_panel">
+                            <img src="/images/svg/heart_cost.svg" alt="!#" class="heart_cost">
+                        </div>
+                    </div>
+                </div>
+                <div class="go_all_menu">
+                    <img src="/images/svg/vse_menu.svg" alt="!#" class="go_all_menu_text">
+                </div>
+            </div>
+        </section>
+        <!-- BEST DISH END-->
+
+        <!-- ABOUT US START-->
+        <section class="about_us_main"> 
+            <div class="about_us_wrap">
+                <h5 class="bd_text_2">
+                    о нас
+                </h5>
+
+                <!-- ПЛАШКА + ТЕКСТ  -->
+                <div class="our_team">
+                    <img src="/images/svg/panel for our team.svg" alt="!#">
+                    <div class="our_team_text">наша команда</div>
+                </div>
+
+                <div class="star_for_about_us">
+                    <img src="/images/svg/star_1_best_dish.svg" alt="!#" class="star_4">
+                </div>
+
+                <div class="im_text_container_US_1">
+                    <img src="/images/svg/grey_panel_ab_us_1.svg" alt="!#">
+                    <div class="about_us_1_text">В команде Tofu Time мы умеем соединять искусство корейской кухни с уважением к традициям и вкусам наших покупателей. Мы гордимся своей атмосферой гостеприимства и стремимся обеспечить каждого посетителя нашей кофейни незабываемым опытом.</div>
+                </div>
+
+                <div class="im_text_container_US_2">
+                    <img src="/images/svg/grey_panel_ab_us_2.svg" alt="!#">
+                    <div class="about_us_2_text">Наша команда постоянно развивается, чтобы предоставлять лучшее качество блюд и услуг, что делает Tofu Time идеальным местом для встреч друзей, семейных обедов и деловых встреч.</div>
+                </div>
+
+                <div class="pelmeni">
+                    <img src="/images/доска с пельмешами и мукой.png" alt="!#" class="pelmeni_vs">
+                </div>
+
+                <div class="damplingi">
+                    <img src="/images/тарелка с пельмешами + палочки.png" alt="!#" class="damplingi_vs">
+                </div>
+
+                <div class="korean_3">
+                    <img src="/images/svg/괜찮아~.svg"> 
+                </div>
+
+            </div>
+        </section>
+        <!-- ABOUT US END-->
+
+        <!-- OUR RESTAURANTS START-->
+        <section class="our_restaurants">
+            <div class="our_place_wrap">
+                <h6 class="bd_text_3">
+                    наши
+                </h6>
+
+                <!-- ПЛАШКА + ТЕКСТ  -->
+                <div class="our_place">
+                    <img src="/images/svg/panel for our places.svg" alt="!#">
+                    <div class="our_place_text">рестораны</div>
+                </div>
+
+                <div class="container_places">
+                    <!-- первая плашка -->
+                    <div class="place_1">
+                        <div class="panel_for_place"></div>
+                        <div class="place_pic">
+                            <img src="/images/place_1.png" alt="!#" class="place_1">
+                        </div>
+                        <hp class="name_of_place">yл. мимоза, дом 13</hp>
+
+                        <div class="more_main">
+                            <img src="/images/white mini panel w strelochka.png" alt="!#" class="panel_w_strelochka">
+                            <p3 class="more_title_title">подробнее</p3>
+                        </div>
+                    </div>
+
+                    <!-- вторая плашка -->
+                    <div class="place_2">
+                        <div class="panel_for_place"></div>
+                        <div class="place_pic">
+                            <img src="/images/place_2.png" alt="!#" class="place_2">
+                        </div>
+                        <hp class="name_of_place">пл. феерия, дом 24</hp>
+
+                        <div class="more_main">
+                            <img src="/images/white mini panel w strelochka.png" alt="!#" class="panel_w_strelochka">
+                            <p3 class="more_title_title">подробнее</p3>
+                        </div>
+                    </div>
+
+                    <!-- третья плашка -->
+                    <div class="place_3">
+                        <div class="panel_for_place"></div>
+                        <div class="place_pic">
+                            <img src="/images/place_3.png" alt="!#" class="place_3">
+                        </div>
+                        <hp class="name_of_place_one_more_time">пр. звездный, дом 7</hp>
+
+                        <div class="more_main_1">
+                            <img src="/images/white mini panel w strelochka.png" alt="!#" class="panel_w_strelochka">
+                            <p3 class="more_title_title">подробнее</p3>
+                        </div>
+                    </div>
+
+                    <!-- четвертая плашка -->
+                    <div class="place_4">
+                        <div class="panel_for_place"></div>
+                        <div class="place_pic">
+                            <img src="/images/place_4.png" alt="!#" class="place_4">
+                        </div>
+                        <hp class="name_of_place_one_more_time">ал. фантазия, дом 3</hp>
+
+                        <div class="more_main_1">
+                            <img src="/images/white mini panel w strelochka.png" alt="!#" class="panel_w_strelochka">
+                            <p3 class="more_title_title">подробнее</p3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- БРОНЬ  -->
+                <div class="panel_reservation">
+                    <img src="/images/svg/panel_for_reservation.svg" alt="!#">
+                    <div class="reservation_text">бронь</div>
+                </div>
+
+                <!-- ЗАКАЗ ЗАРАНЕЕ  -->
+                <div class="panel_order">
+                    <img src="/images/svg/panel_for_order_zaranee.svg" alt="!#">
+                    <div class="order_text">заказ  заранее</div>
+                </div>
+            </div>
+        </section>
+        <!-- OUR RESTAURANTS END-->
+
+        <!-- FEEDBACK START-->
+        <section class="feedback">
+            <div class="feedback_wrap_idnk">
+                <h7 class="bd_text_4">
+                    отзывы
+                </h7>
+
+                <!-- ПЛАШКА + ТЕКСТ  -->
+                <div class="feedback_panel">
+                    <img src="/images/svg/feedback panel.svg" alt="!#">
+                    <div class="feedback_text">наших гостей</div>
+                </div>
+
+                <div class="container_feedback">
+                    <!-- первый отзыв -->
+                    <div class="otz_1">
+                        <div class="panel_for_feedback">
+                            <div class="photo_otz">
+                                <img src="/images/svg/otz_1_zubarev.svg" alt="!#">
+                                <ot1 class="name_text">Александр З.</ot1>
+                                <dd class="name_date_text">май 2024</dd>
+                            </div>
+                            <div class="main_title">
+                                <dt class="title_of_otz">“Ну, мать, удивляешь!”</dt>
+                                <dm class="pisanina_feedback">
+                                    Ну что могу сказать, друзья? Побывав в корейском кафе "Tofu Time" несколько раз, я просто обязан поделиться своими впечатлениями с вами, орлята мои.
+                                    Я перепробовал здесь немало блюд, и каждое из них произвело на меня неизгладимое впечатление. Готов расцеловать повара за дамплинги. Корейская кухня раскрылась для меня с новой, яркой стороны. Особого внимания заслуживает и внушительный ассортимент национальных напитков.
+                                </dm>
+                            </div>
+                            <div class="link_feedback">
+                                <dl class="link_text">читать весь отзыв</dl>
+                                <img src="/images/svg/quotation marks.svg" alt="!#" class="link_svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- второй отзыв -->
+                    <div class="otz_2">
+                        <div class="panel_for_feedback">
+                            <div class="photo_otz">
+                                <img src="/images/svg/otz_2_JYP'ik.svg" alt="!#">
+                                <ot1 class="name_text">Пак Джинён</ot1>
+                                <dd class="name_date_text">март 2024</dd>
+                            </div>
+                            <div class="main_title">
+                                <dt class="title_of_otz">“Замечательно”</dt>
+                                <dm class="pisanina_feedback">
+                                    Недавно посетил данную очаровательную корейскую кафешку, и у меня остались только положительные впечатления! 
+                                    Уютная атмосфера, вкусная еда и дружелюбный персонал. Я бы с радостью пригласил своих 'детей' из компании сюда на обед, но, к сожалению, они почему-то больше не хотят со мной обедать. 
+                                    Надеюсь, скоро мы все вместе вернемся и насладимся этой замечательной кухней! Так что, если кто-то из вас ищет место для встречи с друзьями или просто хочет насладиться отличной едой, я настоятельно рекомендую эту кафешку.
+                                </dm>
+                            </div>
+                            <div class="link_feedback">
+                                <dl class="link_text">читать весь отзыв</dl>
+                                <img src="/images/svg/quotation marks.svg" alt="!#" class="link_svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- третий отзыв -->
+                    <div class="otz_3">
+                        <div class="panel_for_feedback">
+                            <div class="photo_otz">
+                                <img src="/images/svg/otz_3_BTS.svg" alt="!#">
+                                <ot1 class="name_text">Чон Чонгук</ot1>
+                                <dd class="name_date_text">апрель 2024</dd>
+                            </div>
+                            <div class="main_title">
+                                <dt class="title_of_otz">“Очень вкусно!”</dt>
+                                <dm class="pisanina_feedback">
+                                    У меня не очень хорошо с английским, поэтому пришлось выкручиваться. Однако персонал очень вежливо отнесся ко мне и хёну. Я тоже не промах, сказал “вместе бум”, и все блюда  принесли почти одновременно! Их кимчи тоже просто невероятны! 
+                                    Я чувствовал, что моя душа просто пляшет от счастья после каждого кусочка. Если вы хотите вкусно поесть и почувствовать себя как короли, то это кафе - ваш идеальный выбор! 
+                                    А теперь я просто мечтаю о том, чтобы вернуться сюда снова и снова.
+                                </dm>
+                            </div>
+                            <div class="link_feedback">
+                                <dl class="link_text">читать весь отзыв</dl>
+                                <img src="/images/svg/quotation marks.svg" alt="!#" class="link_svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- FEEDBACK END-->
+
+
+        <!-- FOOTER START-->
+        <footer class="footer">
+            <div class="footer_wrap">
+                <p class="us_text">
+                    контакты
+                </p>
+
+                <div class="footer_container">
+                    <div class="mail">
+                        <img src="/images/svg/mail_pic.svg" alt="!#">
+                        <p class="footer_text_left_side">tofutime@nomnom.com</p>
+                    </div>
+
+                    <div class="inst">
+                        <img src="/images/svg/inst_pic.svg" alt="!#">
+                        <p class="footer_text_left_side">@tofu_time</p>
+                    </div>
+
+                    <div class="phone">
+                        <img src="/images/svg/phone_pic.svg" alt="!#">
+                        <p class="footer_text_left_side">+7 999-99-99</p>
+                    </div>
+
+                    <div class="vk">
+                        <img src="/images/svg/vk_pic.svg" alt="!#">
+                        <p class="footer_text_left_side">tofu_time</p>
+                    </div>
+                </div>
+                
+                <div class="footer_container_1">                    
+                    <p class="footer_text_left_side">меню</p>
+                    <p class="footer_text_left_side">адреса</p>
+                    <p class="footer_text_left_side">бронь</p>
+                    <p class="footer_text_left_idk">@tofutime</p>
+                    <p class="footer_text_left_side">о нас</p>
+                    <p class="footer_text_left_side">отзывы</p>
+                    <p class="footer_text_left_side">заказ заранее</p>
+                    <p class="footer_text_left_idk">by kayrise</p>
+                </div>
+
+            
+                </div>
+            </div>
+        </footer>
     </main>
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="lightzoom/style.css" type="text/css">
+
+    <!-- <script type="text/javascript">jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true});</script> -->
+    <script src="myscript.js"></script>
 </body>
 </html>
