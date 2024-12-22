@@ -6,6 +6,7 @@
     <title>tofutime</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="aos.css">
     <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
@@ -22,19 +23,20 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <il class="header__item">
-                            <a href="#!" class="header__link">главная</a>
+                            <a href="#main" class="header__link">главная</a>
                         </il>
                         <il class="header__item">
-                            <a href="#!" class="header__link">меню</a>
+                            <!-- <a href="menu.html" class="header__link">меню</a> -->
+                            <a href="https://www.youtube.com/watch?v=mM85DY5d_rM" class="header__link">меню</a>
                         </il>
                         <il class="header__item">
-                            <a href="#!" class="header__link">о нас</a>
+                            <a href="#about_us" class="header__link">о нас</a>
                         </il>
                         <il class="header__item">
-                            <a href="#!" class="header__link">адреса</a>
+                            <a href="#place" class="header__link">адреса</a>
                         </il>
                         <il class="header__item">
-                            <a href="#!" class="header__link">🕿 999-99-99</a>
+                            <a href="tel:999-99-99" class="header__link">🕿 999-99-99</a>
                         </il>
                     </ul>
                 </nav>
@@ -47,8 +49,8 @@
 
     <main class="main">
         <!-- INTRO START-->
-        <section class="intro">
-            <div class="intro__wrap">
+        <section class="intro" id="main">
+            <div id="tofu_parent" class="intro__wrap">
                 <h1 id="myButton" class="intro__title"> погрузитесь в </h1>
 
                 <div class="image-text-container1">
@@ -80,12 +82,11 @@
                 <div class="korean_first">
                     <img src="/images/korean nadpis.png" alt="!#" class="korean_intro_nadpis">
                 </div>
+                <div id="animate_tofu" class="animate_tofu">
+                    <img src="images/svg/STAR.svg" alt="">
+                    <p>TOFU TIME</p>
+                </div>
             </div>
-                <!-- <div id='myModal'class='modal'>
-                    <div class='modal_content'>
-                        <div id='myClose' class='close'>&times;</div>не звоните
-                    </div>
-                </div> -->
         </section>
         <!-- INTRO END-->
 
@@ -116,8 +117,8 @@
                         <div class="panel_for_dish">
                             <!-- <img src="/images/svg/panel for bludo.svg" alt="!#" class="panel_for_dish_1"> -->
                         </div>
-                        <div class="dish_pic">
-                            <img src="/images/vok s ovozhami 1.png" alt="вок с овощами" class="dish_wok">
+                        <div class="dish_pic_1">
+                            <img src="/images/vok s ovozhami 1.png" alt="вок с овощами" class="zoom-effect">
                         </div>
                         <hw class="name_of_position">вок с овощами</hw>
                         <p class="dish_desc">рис, маринованная морковь, яйцо, чука, кимчи, стручки фасоли, огурец, соус</p>
@@ -132,8 +133,8 @@
                     <!-- вторая плашка с пельменями -->
                     <div class="dish_2">
                         <div class="panel_for_dish"></div>
-                        <div class="dish_pic">
-                            <img src="/images/king pelmeni.png" alt="королевские дамплинги" class="dish_pelmeni">
+                        <div class="dish_pic_2">
+                            <img src="/images/king pelmeni.png" alt="королевские дамплинги" class="zoom-effect">
                         </div>
                         <hw class="name_of_position">королевские дамплинги</hw>
                         <p class="dish_desc_1">невероятное тесто, слепленное со всей душой, мясо самой лучшей коровы, репчатый лук, морковь</p>
@@ -149,8 +150,8 @@
                     <!-- третья плашка с поке -->
                     <div class="dish_3">
                         <div class="panel_for_dish"></div>
-                        <div class="dish_pic">
-                            <img src="/images/poke with losos.png" alt="поке" class="dish_poke">
+                        <div class="dish_pic_3">
+                            <img src="/images/poke with losos.png" alt="поке" class="zoom-effect">
                         </div>
                         <hw class="name_of_position">поке с копченным лососем</hw>
                         <p class="dish_desc_1">копченый лосось, рис, авокадо, огурец, помидор, яйцо, фасоль, кукуруза, листья салата</p>
@@ -170,7 +171,7 @@
         <!-- BEST DISH END-->
 
         <!-- ABOUT US START-->
-        <section class="about_us_main"> 
+        <section class="about_us_main" id="about_us"> 
             <div class="about_us_wrap">
                 <h5 class="bd_text_2">
                     о нас
@@ -197,11 +198,11 @@
                 </div>
 
                 <div class="pelmeni">
-                    <img src="/images/доска с пельмешами и мукой.png" alt="!#" class="pelmeni_vs">
+                    <img src="/images/доска с пельмешами и мукой.png" data-aos="fade-up-left" data-aos-duration="1300" alt="!#" class="pelmeni_vs">
                 </div>
 
                 <div class="damplingi">
-                    <img src="/images/тарелка с пельмешами + палочки.png" alt="!#" class="damplingi_vs">
+                    <img src="/images/тарелка с пельмешами + палочки.png" data-aos="fade-up-right" data-aos-duration="1300" alt="!#" class="damplingi_vs">
                 </div>
 
                 <div class="korean_3">
@@ -213,7 +214,7 @@
         <!-- ABOUT US END-->
 
         <!-- OUR RESTAURANTS START-->
-        <section class="our_restaurants">
+        <section class="our_restaurants" id="place">
             <div class="our_place_wrap">
                 <h6 class="bd_text_3">
                     наши
@@ -228,12 +229,11 @@
                 <div class="container_places">
                     <!-- первая плашка -->
                     <div class="place_1">
-                        <div class="panel_for_place"></div>
-                        <div class="place_pic">
-                            <img src="/images/place_1.png" alt="!#" class="place_1">
+                        <div class="panel_for_place">
+                            <img src="/images/place_1.png" alt="!#" class="zoom-effect_1">
                         </div>
                         <hp class="name_of_place">yл. мимоза, дом 13</hp>
-
+                       
                         <div class="more_main">
                             <img src="/images/white mini panel w strelochka.png" alt="!#" class="panel_w_strelochka">
                             <p3 class="more_title_title">подробнее</p3>
@@ -242,9 +242,8 @@
 
                     <!-- вторая плашка -->
                     <div class="place_2">
-                        <div class="panel_for_place"></div>
-                        <div class="place_pic">
-                            <img src="/images/place_2.png" alt="!#" class="place_2">
+                        <div class="panel_for_place">
+                            <img src="/images/place_2.png" alt="!#" class="zoom-effect_1">
                         </div>
                         <hp class="name_of_place">пл. феерия, дом 24</hp>
 
@@ -256,10 +255,10 @@
 
                     <!-- третья плашка -->
                     <div class="place_3">
-                        <div class="panel_for_place"></div>
-                        <div class="place_pic">
-                            <img src="/images/place_3.png" alt="!#" class="place_3">
+                        <div class="panel_for_place">
+                            <img src="/images/place_3.png" alt="!#" class="zoom-effect_1">
                         </div>
+                        
                         <hp class="name_of_place_one_more_time">пр. звездный, дом 7</hp>
 
                         <div class="more_main_1">
@@ -270,9 +269,8 @@
 
                     <!-- четвертая плашка -->
                     <div class="place_4">
-                        <div class="panel_for_place"></div>
-                        <div class="place_pic">
-                            <img src="/images/place_4.png" alt="!#" class="place_4">
+                        <div class="panel_for_place">
+                            <img src="/images/place_4.png" alt="!#" class="zoom-effect_1">
                         </div>
                         <hp class="name_of_place_one_more_time">ал. фантазия, дом 3</hp>
 
@@ -285,14 +283,18 @@
 
                 <!-- БРОНЬ  -->
                 <div class="panel_reservation">
-                    <img src="/images/svg/panel_for_reservation.svg" alt="!#">
-                    <div class="reservation_text">бронь</div>
+                    <!-- <img src="/images/svg/panel_for_reservation.svg" alt="!#"> -->
+                    <!-- <div class="reservation_text">бронь</div> -->
+                    <button class="reservation_button">
+                        <p class="reservation_text">бронь</p>
+                    </button>
                 </div>
 
                 <!-- ЗАКАЗ ЗАРАНЕЕ  -->
                 <div class="panel_order">
-                    <img src="/images/svg/panel_for_order_zaranee.svg" alt="!#">
-                    <div class="order_text">заказ  заранее</div>
+                    <button class="order_button">
+                        <p class="reservation_text">заказ заранее</p>
+                    </button>
                 </div>
             </div>
         </section>
@@ -310,9 +312,10 @@
                     <img src="/images/svg/feedback panel.svg" alt="!#">
                     <div class="feedback_text">наших гостей</div>
                 </div>
+            </div>
 
-                <div class="container_feedback">
-                    <!-- первый отзыв -->
+            <div class="container_feedback">
+                <div class="feedback_wrapper">
                     <div class="otz_1">
                         <div class="panel_for_feedback">
                             <div class="photo_otz">
@@ -333,8 +336,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- второй отзыв -->
+                
                     <div class="otz_2">
                         <div class="panel_for_feedback">
                             <div class="photo_otz">
@@ -351,13 +353,12 @@
                                 </dm>
                             </div>
                             <div class="link_feedback">
-                                <dl class="link_text">читать весь отзыв</dl>
-                                <img src="/images/svg/quotation marks.svg" alt="!#" class="link_svg">
+                                    <dl class="link_text">читать весь отзыв</dl>
+                                    <img src="/images/svg/quotation marks.svg" alt="!#" class="link_svg">
                             </div>
                         </div>
                     </div>
-
-                    <!-- третий отзыв -->
+                
                     <div class="otz_3">
                         <div class="panel_for_feedback">
                             <div class="photo_otz">
@@ -374,12 +375,58 @@
                                 </dm>
                             </div>
                             <div class="link_feedback">
+                                    <dl class="link_text">читать весь отзыв</dl>
+                                    <img src="/images/svg/quotation marks.svg" alt="!#" class="link_svg">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="otz_4">
+                        <div class="panel_for_feedback">
+                            <div class="photo_otz">
+                                <img src="/images/svg/otz_4_natalie_seawar.svg" alt="!#">
+                                <ot1 class="name_text">Наталья М.П.</ot1>
+                                <dd class="name_date_text">март 2024</dd>
+                            </div>
+                            <div class="main_title">
+                                <dt class="title_of_otz">“Хотела скандал учинить, но не стала”</dt>
+                                <dm class="pisanina_feedback">
+                                    День не задался с самого начала, когда в маршрутке не поверили, что у меня джип в Москве, поэтому уж пришлось зайти сюда, раз до нужного места я не смогла доехать. 
+                                    Я немного склонна к истерикам, но это заведение удивило меня. 
+                                    На кассе хотела скандал учинить, потому что к какой-то стати мне добавили соус, но потом вспомнила, что я сама попросила.
+                                </dm>
+                            </div>
+                            <div class="link_feedback">
+                                <dl class="link_text">читать весь отзыв</dl>
+                                <img src="/images/svg/quotation marks.svg" alt="!#" class="link_svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="otz_5">
+                        <div class="panel_for_feedback">
+                            <div class="photo_otz">
+                                <img src="/images/svg/otz_5_homa.svg" alt="!#">
+                                <ot1 class="name_text">Хома Х.</ot1>
+                                <dd class="name_date_text">февраль 2024</dd>
+                            </div>
+                            <div class="main_title">
+                                <dt class="title_of_otz">“Я приду еще не раз!”</dt>
+                                <dm class="pisanina_feedback">
+                                    Когда я впервые попробовал их бибимбап, мои щеки загорелись от восторга! Это было как танец вкуса на моих нежных усиках. 
+                                    Их кимчи тоже были просто потрясающими! Я чувствовал, что мое сердце начинает биться сильнее от радости после каждого крошечного кусочка. 
+                                    Хотя я стеснительный хомяк, это кафе заставило меня почувствовать себя как настоящий гурман. Теперь я мечтаю вернуться сюда снова и снова, и, может быть, даже поделиться этим впечатлением со своими хомячьими друзьями!
+                                </dm>
+                            </div>
+                            <div class="link_feedback">
                                 <dl class="link_text">читать весь отзыв</dl>
                                 <img src="/images/svg/quotation marks.svg" alt="!#" class="link_svg">
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+                
 
             </div>
         </section>
@@ -396,7 +443,9 @@
                 <div class="footer_container">
                     <div class="mail">
                         <img src="/images/svg/mail_pic.svg" alt="!#">
-                        <p class="footer_text_left_side">tofutime@nomnom.com</p>
+                        <!-- <a class="footer_text_left_side" href="mailto:kayrise@bk4.ru&body=привет?subject=вопрос">tofutime@nomnom.com</a> -->
+                        <a class="footer_text_left_side">tofutime@nomnom.com</a>
+
                     </div>
 
                     <div class="inst">
@@ -427,7 +476,7 @@
                 </div>
 
             
-                </div>
+                
             </div>
         </footer>
     </main>
@@ -438,8 +487,11 @@
     
     
     <link rel="stylesheet" href="lightzoom/style.css" type="text/css">
-
+    <script src="aos.js"></script>
     <!-- <script type="text/javascript">jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true});</script> -->
     <script src="myscript.js"></script>
+    <script src="script.js"></script>
+    <script src="scroll.js"></script>
+    <script src="tofu-time.js"></script>
 </body>
 </html>

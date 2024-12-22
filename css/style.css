@@ -14,6 +14,20 @@
     font-display: swap;
 }
 
+@font-face{
+    font-family: "drfont_daraehand";
+    src: url("../fonts/drfont_daraehand\ Regular.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{ --header-height: 20px}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
 
 html{
     box-sizing: border-box;
@@ -31,6 +45,9 @@ body{
     font-weight: normal;
     color: black;
     cursor: url(../images/meow1.png), auto;
+    overflow-x:hidden;
+    margin: 0; 
+    padding: 0; 
 }
 
 .wrapper{
@@ -87,9 +104,9 @@ body{
    text-decoration: none;
    color: black;
 }
-
-.header__list:hover, .header__list:focus, .header__list:active{
-    opacity: rgba(179, 208, 180, 1);
+.header__link:hover{
+    color: rgba(179, 208, 180, 1);
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 /*header styles end*/
@@ -136,16 +153,6 @@ body{
     padding-left: -20px;
     padding-bottom: 10px;
 }
-
-/* .h2 span{
-    display: inline;    
-    background-color: rgba(179, 208, 180, 1);
-    padding: 2px 2px;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; 
-    border-radius: 59.12px; 
-    
-} */
 
 .intro_end_not_yet{
     max-width: 430.03px;
@@ -229,6 +236,27 @@ body{
     margin: 15% auto;
 }
 
+.animate_tofu {
+    z-index: 100000;
+    position: absolute;
+    top: 790px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.animate_tofu p {
+    font-family: "drfont_daraehand";
+    text-wrap: nowrap;
+    color: rgba(179, 208, 180, 1);
+    font-size: 20px;
+}
+
+.animate_tofu img{
+    width: 10%;
+}
+
 /*intro styles end*/
 /*BEST DISH SELECTION START*/
 
@@ -289,17 +317,6 @@ body{
     margin-right: 3%;
 }
 
-/* .panel_for_dish_1{
-    backdrop-filter: blur(15px); 
-    height: 632.86px;
-    position: absolute;
-    left: 7%;
-} */
-
-.dish_1, .dish_2, .dish_3 {
-    position: static; /* Изменяем позиционирование */
-} 
-
 .panel_for_dish{
     width: 333px;
     height: 632.86px;
@@ -310,21 +327,29 @@ body{
     margin-top: 15%;
 }
 
-.dish_wok{
+.dish_pic_1 img{
     position: absolute;
     top: 32%;
     width: 23%;
     left: 7.5%;
 }
 
-.dish_pelmeni{
+.dish_pic_2 img{
     position: absolute;
     top: 25%;
     width: 36%;
     left: 36%;
 }
 
-.dish_poke{
+.zoom-effect {
+    transition: transform 0.3s;
+}
+  
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+
+.dish_pic_3 img{
     position: absolute;
     top: 30%;
     width: 25%;
@@ -339,6 +364,10 @@ body{
     display: flex;
     align-items: flex-start;
     width: 20%;
+}
+.name_of_position:hover{
+    color: rgba(179, 208, 180, 1);
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .dish_desc{
@@ -553,31 +582,23 @@ body{
     border: 4px solid rgba(179, 208, 180, 0.5); 
     margin-top: 8%;
 }
+.zoom-effect_1 {
+    transition: transform 0.3s;
+}
+.zoom-effect_1:hover {
+    transform: scale(1.05);
+}
+
+.panel_for_place img{
+    width: 24%;
+    padding-top: 2%;
+    padding-left: 72.5%
+}
 
 .place_pic img{
     position: absolute;
-    width: 10%;
-    z-index: 2; 
-}
-
-.place_1{
-    top: 12%;
-    left: 32.5%;
-}
-
-.place_2{
-    top: 12%;
-    right: 7%;
-}
-
-.place_3{
-    left: 32.5%;
-    top: 62%;
-}
-
-.place_4{
-    right: 7%;;
-    top: 62%;
+    width: 20%;
+    z-index: 2;
 }
 
 .name_of_place{
@@ -641,9 +662,35 @@ body{
 .reservation_text{
     width: 100%;
     font-size: 40px;
-    position: absolute;
-    bottom: 29%;
-    left: 15%; 
+    font-family: "AvantGarde-Bold";
+}
+
+.reservation_button{
+    width: 169px;
+    height: 66px;
+    border-radius: 10em;
+    background-color: rgba(179, 208, 180, 1);
+    border-width: 0;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25); 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.order_button{
+    width: 349px;
+    height: 66px;
+    border-radius: 10em;
+    background-color: rgba(179, 208, 180, 1);
+    border-width: 0;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25); 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.reservation_button p {
+    margin: 0;
 }
 
 .panel_order{
@@ -699,21 +746,44 @@ body{
 }
 .container_feedback{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 5%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 9.8%;
     margin-left: 7.5%;
     margin-right: 3%;
     margin-top: 11%;
+    padding: 10px 0;
+    overflow: hidden; 
+    width: 100%; 
+    max-width: 100vw; 
+    padding: 10px 0; 
+    position: relative; 
+}
+.feedback_wrapper {
+    display: flex; 
+    animation: scroll 50s linear infinite;
+    justify-content: space-between; 
+    box-sizing: border-box;
+    width: 100%;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
 }
 
 .panel_for_feedback{
     position: relative;
-    width: 333px;
+    min-width: 333px;
     height: 632.86px;
     background: linear-gradient(45deg, rgba(206, 206, 206, 0.55),rgba(255, 255, 255, 0.05));
     backdrop-filter: blur(39px);
     border-radius: 50px;
-    border: 4px solid rgba(156, 180, 157, 0.5);   
+    border: 4px solid rgba(156, 180, 157, 0.5);  
+    margin-right: 110px; 
+    padding: 15px; 
 }
 
 .photo_otz{
@@ -734,8 +804,8 @@ body{
     font-family: 'AvantGardeGothicC';
     letter-spacing: 1.2px;
     color: rgba(104, 122, 105, 1);
-    left: 40%;
-    top: 16%;
+    left: 41%;
+    top: 18%;
 }
 
 .main_title{
@@ -746,6 +816,7 @@ body{
 }
 .title_of_otz{
     font-size: 20px;
+    width: 90%;
 }
 
 .pisanina_feedback{
@@ -845,6 +916,7 @@ body{
 
 .footer_text_left_idk{
     color: rgba(255, 255, 255, 0.5);
+    
 }
 
 /*FOOTER SELECTION END*/
